@@ -1,0 +1,137 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{main}
+\usepackage[a4paper, textwidth=170mm, textheight=240mm]{geometry}
+
+\begin{document}
+\newlength{\tabcolsepDefault}
+\setlength{\tabcolsepDefault}{\tabcolsep}
+
+%-------------------------------------------------------------------------------
+
+\definecolor{green1}{HTML}{A0F0C0}
+\definecolor{tableColor1}{HTML}{FFFFFF}
+\definecolor{tableColor2}{HTML}{F0E0D0}
+
+%-------------------------------------------------------------------------------
+
+\newcommand{\textbi}[1]{\textbf{\textit{#1}}}
+
+\newcommand{\projName}{Stardust G1}
+
+%-------------------------------------------------------------------------------
+
+\title{Stardust G1 Game Design Document}
+\author{Jinnturtle}
+
+\maketitle
+\tableofcontents
+
+\TODO{change colors to bright on dark, for a more in-space feel, maybe use a
+picture as background}
+
+\TODO{incorporate svg diagrams and png thumbnails into doc}
+
+\part{Gameplay}
+
+This part covers ideas and concepts of gameplay while avoiding mention of
+technical requirements or constraints, technical concepts are discussed in
+the part of this document dedicated to those subjects.
+
+\section{Synopsis}
+\begin{multicols}{2}
+Project \projName{} game idea is to produce a space opera game, main concepts
+include: flying a modular spaceship (chose from smallest boats to a gigantic
+flying city), influencing the economy via providing production/trade/services,
+exploring a vast interstellar sandbox world.
+
+Aspects in order of priority:
+\begin{enumerate}
+    \item production, crafting
+    \item extracting, procuring raw materials; processing
+    \item trading;
+    \item exploration; combat
+\end{enumerate}
+
+\TODO{Create a section for game concepts, and write a summary for each of the
+aforementioned above.}
+\end{multicols}
+
+\section{Flavour}
+\begin{multicols}{2}
+A lot can be drawn from EVE Online, X series
+
+\TODO{flesh out this flavour/inspiration section a bit more with look/feel and
+gameplay ideas}
+\end{multicols}
+
+\section{Economy}
+\begin{multicols}{2}
+The general idea of the game economy is that everything can be produced my the
+players, and nothing produced is permanent i.e. value is absorbed back into the
+economy and uncontrolled devaluation of currency (e.g. credits) doesn't happen
+due to object permanence.
+\end{multicols}
+
+\section{Crafting}
+\begin{multicols}{2}
+the player should be able to make everything he can see/use (or as close to
+everything as plausible) given enough effort.
+
+Everything made should not be permanent: fuel/ammo/power cells are consumed by
+ships, stations, colonies; food is consumed by crew, colony population, etc;
+ships and installations get destroyed in conflict, most need maintenance; most
+blueprints are of limited use i.e. serve as licence to produce a limited amount
+of product;
+
+A player should be able to extract or otherwise procure materials and produce
+everything starting at any stage of the manufacturing process, but everything
+will eventually get used up, wear out, or get destroyed in conflict.
+
+Players should be able to automate production and supply lines to some extent,
+as the idea is not to be forced into a mandatory click-fest once one's industry
+empire grows a bit.
+
+\subsection{Large Assembly (Ships/Stations, Station/Colony Facilities)}
+Large structures should usually consist of a hull/frame as base and modules
+that can be mounted on it.
+
+A planetary settlement/colony or a larger space station will most likely consist
+of several facilities that each have a frame/base and modules.
+\end{multicols}
+
+
+\section{Combat}
+\begin{multicols}{2}
+Main aspects to consider in combat is range and type of damage.
+
+A weapon will deal certain kind(s) of damage depending on type of weapon chosen
+and ammunition loaded. Weapon/ammo combinations will be most effective at a
+certain range due to tracking/accuracy/ordnance stability concerns, so the armed
+vessel in question will want to maintain this optimal range -- usually by being
+faster than opposing craft.
+
+\subsection{Damage Types and Damage Mitigation}
+Weapons/ammunition will usually be most effective at dealing one or two types
+of damage, as well as armor/shield defences can be calibrated to be most
+effective at protecting from a limited range of damage types while being more
+susceptible to other types of damage as a trade off.
+\end{multicols}
+
+Damage types:
+\begin{itemize}
+    \item kinetic (brute impact)
+    \item heat
+    \item static (electric charge / disruption, etc)
+    \item radiation
+\end{itemize}
+
+
+\section{Questions to Answer/Develop}
+\begin{itemize}
+    \item pov
+    \item navigation inside/on structures/planets/colonies, etc
+\end{itemize}
+
+\part{Technical Implementation}
+
+\end{document}

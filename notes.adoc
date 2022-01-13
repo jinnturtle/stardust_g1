@@ -1,0 +1,5 @@
+= NOTES
+
+== TODO
+
+Create a makefile for entire project, it should include the makefile for docs
