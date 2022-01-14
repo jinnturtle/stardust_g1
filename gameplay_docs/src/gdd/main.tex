@@ -74,7 +74,7 @@ due to object permanence.
 
 \section{Crafting}
 \begin{multicols}{2}
-the player should be able to make everything he can see/use (or as close to
+The player should be able to make everything they can see/use (or as close to
 everything as plausible) given enough effort.
 
 Everything made should not be permanent: fuel/ammo/power cells are consumed by
@@ -97,6 +97,62 @@ that can be mounted on it.
 
 A planetary settlement/colony or a larger space station will most likely consist
 of several facilities that each have a frame/base and modules.
+\end{multicols}
+
+
+
+\section{Navigation}
+\begin{multicols}{2}
+
+\subsection{Space}
+The interface should allow for direct keyboard control e.g. W/A - up/down, A/D
+- strafe, Q/E - roll. Most manoeuvres should be comfortable to execute by mouse
+via a commands menu (e.g. ``orbit target keeping 2km range''), as roll is
+important for weapon fire manual keyboard control should be accessible, but
+setting a behaviour e.g. (keep port/starboard/etc towards target) should be
+enough for most use cases.
+
+\subsection{Interstellar}
+Most star systems are connected via the stargate network and is where the
+usual method for most interstellar traffic. To be able to use the gate player
+must pay a fee which may vary depending on volume and mass they wish to
+transport. Time-limited agreements may be available at a regional level
+depending on relations with local factions, and may offer an overall discount
+at an industrial level (e.g. renting lane volume for ones industry ships, etc).
+
+Alternative means of transport is to use worm-holes, but these vary in the mass
+and volume they can support before destabilizing or collapsing entirely.
+Depending on phenomenon type, some wormholes may require additional onboard
+equipment to be used safely, otherwise causing damage to transiting vessels or
+be inaccessible entirely. The player would need to either discover wormholes
+and wormhole networks themself or procure information about them. Wormholes are
+rarely stable, but most are recurring, some more often than others, some have a
+frequency while others open and close seemingly at random.
+
+\subsection{Stations and Colonies}
+Most if not all facilities and options for in-station or on-planet operations
+should be available remotely from other outposts or from space when close
+enough.
+
+When in/near station or on planet the various facilities can be accessed via
+UI, most likely in the form of menus and/or buttons.
+
+It is possible to dock ones ship with space and planetary installations if the
+installation has facilities large enough to accommodate said ship. Some
+operations require one to dock e.g. cargo or passenger transfer, neural
+cloning, etc.
+
+\subsection{Note on Large Settlements}
+Navigating on large planets or in large multi-section space structures may
+need additional thought (e.g. an interface to move between nodes/regions of
+significance).
+
+Hopefully this can be streamlined so additional handling would not be necessary
+or would be minimal.
+
+\TODO{Think about how this could work and if special handling is really needed,
+I'm starting to lean towards a no. Graphical representation of largely populated
+planets and multi-node space stations could be quite cool though.}
 \end{multicols}
 
 
@@ -126,10 +182,15 @@ Damage types:
 \end{itemize}
 
 
-\section{Questions to Answer/Develop}
+\section{TODO}
 \begin{itemize}
-    \item pov
-    \item navigation inside/on structures/planets/colonies, etc
+    \item Cover the manufacturing process from raw resource to module/ship,
+    give a few examples.
+    \item What's the default/main POV?
+    \item more details on navigation in space short vs long distances, stars
+    \item more on ship modularity and modules themselves
+    \item weapon modules: types, concerns, etc
+    \item large structure modularity (planetary colonies probably similar idea)
 \end{itemize}
 
 \part{Technical Implementation}
