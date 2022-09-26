@@ -31,6 +31,7 @@ picture as background}
 
 \TODO{incorporate svg diagrams and png thumbnails into doc}
 
+\newpage
 \part{Gameplay}
 
 This part covers ideas and concepts of gameplay while avoiding mention of
@@ -41,15 +42,19 @@ the part of this document dedicated to those subjects.
 \begin{multicols}{2}
 Project \projName{} game idea is to produce a space opera game, main concepts
 include: flying a modular spaceship (chose from smallest boats to a gigantic
-flying city), influencing the economy via providing production/trade/services,
-exploring a vast interstellar sandbox world.
+flying city), influencing the economy via providing services on small (e.g.
+making cargo runs, shooting pirates) or large scale services/production/trade
+via owning/operating some facilities/personell on a station or even growing into
+a comporation with holdings in many star systems, exploring a vast interstellar
+sandbox world.
 
 Aspects in order of priority:
 \begin{enumerate}
+    \item the spacehsip - a home away from home, the office, the job
     \item production, crafting
     \item extracting, procuring raw materials; processing
-    \item trading;
-    \item exploration; combat
+    \item trading
+    \item exploration, combat
 \end{enumerate}
 
 \TODO{Create a section for game concepts, and write a summary for each of the
@@ -58,7 +63,23 @@ aforementioned above.}
 
 \section{Flavour}
 \begin{multicols}{2}
-A lot can be drawn from EVE Online, X series
+Initial sources of inspiration EVE Online, X series, Alien movies, Alien
+RPG by Free League, Coriolis RPG by Free League, Cyberpunk genre (books,
+games, movies).
+
+Some flavour text: \textit{``The hulking metal mass of the ship drifts ever so
+slowly towards the docking clamps. Dull dings and clangs echo throughout the
+hull as the docking mechanism locks the metallic star-farer in place and gently
+starts pulling it towards the loading bays. Some time later rugged crews of men
+and machinery start unloading the vital supplies which will go a long way
+towards ensuring the colony's existence for the coming months. Ship crew float
+out one by one into the station, hopeful with their own plans for the time
+portside, maybe new experiences to break the routine, a visit to the colony,
+some extra pay from a personal stash of pleasant bits and bobs rarely found out
+here. The captain already thinking about avenues for the ship's next jobs while
+keeping an eye on the unloading operation, can't leave the system with empty
+holds after all, not if they want to keep the ship that is, if all goes well
+they will even call her their own one day.''}
 
 \TODO{flesh out this flavour/inspiration section a bit more with look/feel and
 gameplay ideas}
@@ -74,6 +95,11 @@ due to object permanence.
 
 \section{Crafting}
 \begin{multicols}{2}
+Medium to large scale crafting for most people is performed via ordering a
+job from a company, options and location of job execution depends on equipment
+and personnell available at chosen facility(ies). Only the very affluent can
+afford owning entire assembly lines and personnel.
+
 The player should be able to make everything they can see/use (or as close to
 everything as plausible) given enough effort.
 
@@ -105,7 +131,7 @@ of several facilities that each have a frame/base and modules.
 \begin{multicols}{2}
 
 \subsection{Space}
-The interface should allow for direct keyboard control e.g. W/A - up/down, A/D
+The interface should allow for direct keyboard control e.g. W/S - up/down, A/D
 - strafe, Q/E - roll. Most manoeuvres should be comfortable to execute by mouse
 via a commands menu (e.g. ``orbit target keeping 2km range''), as roll is
 important for weapon fire manual keyboard control should be accessible, but
@@ -113,21 +139,32 @@ setting a behaviour e.g. (keep port/starboard/etc towards target) should be
 enough for most use cases.
 
 \subsection{Interstellar}
-Most star systems are connected via the stargate network and is where the
-usual method for most interstellar traffic. To be able to use the gate player
-must pay a fee which may vary depending on volume and mass they wish to
-transport. Time-limited agreements may be available at a regional level
-depending on relations with local factions, and may offer an overall discount
-at an industrial level (e.g. renting lane volume for ones industry ships, etc).
+Most larger ships like freighters and military vessels are fitted with a warp
+drive, when engaged this drive warps space-time around the ship effectively
+creating gravity forces that propel the ship through space. Due to the nature
+of the gravitational fields the drive creates, the performance of the drive
+drops greatly near other significant gravitation fields (e.g. planets). It is
+also dangerous to engage the warp drive even at low power closer than a few
+thousand kilometres to heavier (a few kilograms or more) objects - usually the
+warp fields dissipate instantly without much consequence, but there is
+significant risk of catastrophic consequences to all objects involved
+especially at the point of origin. The usual warp drive of this age propels
+ships through interstellar space at 10 to 20 thousand g of acceleration when at
+full power.
 
-Alternative means of transport is to use worm-holes, but these vary in the mass
-and volume they can support before destabilizing or collapsing entirely.
-Depending on phenomenon type, some wormholes may require additional onboard
-equipment to be used safely, otherwise causing damage to transiting vessels or
-be inaccessible entirely. The player would need to either discover wormholes
-and wormhole networks themself or procure information about them. Wormholes are
-rarely stable, but most are recurring, some more often than others, some have a
-frequency while others open and close seemingly at random.
+\note{For reference, at 10k g acceleration a vessel can reach 20ly distance in
+just over two weeks, accounting for an acceleration and a deceleration phase.}
+
+Orbital ships, persons, and smaller cargo shipments routinely make use of
+so-called warp ferries - large ships with powerful warp drives that can create
+a warp bubble large enough to safely transport nearby ships and large amounts
+of cargo and people on board. The ferries are usually only available on
+high-volume traffic lanes, which creates a big market for smaller freighters to
+service the large amount of small colonies and fringe worlds. If your
+destination is away from the ferry lanes, your best bet is to be on one of
+those freighters, there may not be a stable schedule for flights but most ships
+have a few cryo-pods available if you're willing to pay for their trouble and
+the extra life-support.
 
 \subsection{Stations and Colonies}
 Most if not all facilities and options for in-station or on-planet operations
