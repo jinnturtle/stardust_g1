@@ -1,0 +1,53 @@
+@startmindmap
+
+!include ./uml_skinparams
+
++ modules
+++ weapons / offensive
++++ machine gun
+++++ MG ammo
++++ rail gun
+++++ features
++++++ extreme range
+++++ rails
+++++ RG projectiles
++++ auto cannon
+++++ AC shells
++++ plasma caster
+++++ plasma charges
+++++ features
++++++ high damage
++++++ short range
++++++ good range of damage types via various ammo variants
++++ laser
+++++ lenses
+++++ features
++++++ low ammo intensity (lenses wear out eventually, but most serve a while)
++++++ medium range
++++++ low damage
++++ rocket launcher
+++++ rockets
+++++ features
++++++ very broad damage and range options via wide ammo type selection
++++++ ammunition is bulky, heavy, and more expensive than most other solutions
++++ torpedoes
++++ bombs
++++ drones
+
+-- defensive
+--- armour
+--- shield
+--- sand caster
+--- point defence
+
+-- damage types
+--- basic
+---- kinetic
+---- thermal
+---- electromagnetic
+---- explosion
+--- advanced
+---- radiation
+---- gravity
+---- void
+@endmindmap
