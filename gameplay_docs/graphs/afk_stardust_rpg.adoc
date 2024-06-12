@@ -1,0 +1,14 @@
+= AFK Stardust RPG
+
+Just dawned on me recently that a well done "AFK" RPG can actually be fun and
+would provide an interesting platfor to experiment with some ideas.
+
+== First Brainstorm
+
+FreePlane bugged out so PlantUML to the rescue!
+
+image::feature_brainstorm.svg[]
+
+== Initial Experience Braindump
+
+image::initial_experience_bs.svg[]

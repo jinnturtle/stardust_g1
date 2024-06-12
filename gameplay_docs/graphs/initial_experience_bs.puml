@@ -1,0 +1,31 @@
+@startuml
+
+!include ./uml_skinparams
+
+partition BEGINING {
+floating note: Can be some other scenario too lol.
+start
+:intro to the world;
+:wake up disaster;
+:choose ship;
+:escape;
+}
+
+partition TUTORIALS {
+:get minimal cargo storage;
+
+while (do tutorial?) is (yes)
+	split
+		:mining intro;
+		:rent production line;
+		:make e.g. basic ammo;
+	split again
+    	:minimal combat mission intro
+	    (e.g. clear derelict rogue drones);
+	end split
+endwhile
+}
+:training wheels start to come off;
+:wheee!;
+stop
+@enduml

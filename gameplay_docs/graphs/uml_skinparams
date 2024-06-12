@@ -49,6 +49,7 @@ skinparam arrow {
 
 skinparam note {
           $primary_scheme()
+          BackgroundColor $color_node_d2
           BorderThickness 1
 }
 

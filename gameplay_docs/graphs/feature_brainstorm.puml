@@ -1,0 +1,177 @@
+@startmindmap
+
+!include ./uml_skinparams
+
+' macros --------
+
+!procedure $color_test()
+  * Color Test
+  ** TST
+  *** D2
+  **** D3
+  ***** D4
+  ****** D5
+  ******* D6
+  ******** D7
+  ********* D8
+  ********** D9
+  **_ TST
+  ***_ D2
+  ****_ D3
+  *****_ D4
+  ******_ D5
+  *******_ D6
+  ********_ D7
+  *********_ D8
+  **********_ D9
+!endprocedure
+
+' --------
+
+'$color_test()
+
+* AFK Stardust RPG
+
+left side
+
+** Gameplay
+
+*** Core Principles
+**** Always something to actively do
+****:Can leave any time
+AFK progress will continue.;
+**** Skill progression
+***** Improved with use
+***** Unlocked via books
+***** Improved via time spent in study
+******:Useful for rarely used skills
+e.g. ship building.;
+**** Many characters
+***** Main way to increase productivity
+******:Active while player is AFK
+or focused on another char.;
+****** Opportunity for specialised builds
+****** Can operate facilities at base/settlement
+****** Can pilot additional ships
+*****:Encouragement of "villages"
+via proximity "boon" effects.;
+
+*** Misc Mechanics
+**** Death "penalty"
+***** Loss of ship, modules, cargo
+***** Loss of body implants, inventory
+***** Time to "reconstruct" a body
+
+
+** Skills
+
+*** Pilot
+**** General
+***** Module specialisation
+***** Control bandwidth
+**** Combat
+***** Weapon systems
+****** Modules
+****** Ammunition
+***** Shield operation
+***** Armour use
+***** Evasive manoeuvring
+***** Point defence
+
+*** Resources
+**** Prospecting
+**** Extraction
+***** Ore Mining
+****** Subdivided per type and/or tier?
+***** Ice Mining
+***** Gas Collection
+**** Refining
+**** Salvaging
+
+*** Crafting
+**** Ships
+***** Hull parts
+***** Components
+***** Systems
+***** Shields
+***** Armour
+***** Modules
+****** Weapons
+******* Beams
+******* Kinetics
+******* Plasma
+******* Rockets
+****** Ammunition
+******* Lenses
+******* K. Ammunition
+******* P. Charges
+******* Rockets
+***** Consumables
+****** Short term
+****** Long term
+***** Augments
+***** Fuel
+**** Body Enhancement
+***** Implants (semi-permanent)
+***** Chems (long term)
+***** Stims (short term)
+
+*** Farming
+**** Fruit
+**** Vegetable
+**** Cereal
+**** Herb
+**** Animal
+
+right side
+
+
+** Progression
+*** More Character (slots)
+*** Better Ships
+**** Size
+**** Power Capacity
+*** Skill Improvement
+*** Better Modules
+*** Resource Specialisation
+*** Base(s)
+**** Hangar Size
+**** Cargo Hold Size
+**** Facilities
+***** Variety
+***** Capacity
+***** Efficiency
+*** More Bases
+**** Why?
+***** Additional facility capacity
+***** Advanced facilities in later regions
+*****:Hangar in remote location
+e.g. close to specific kind of resources.;
+*** More Environments
+**** Resource danger/reward ++
+**** Shifting "wormhole space"
+**** Multiverse gate: choice + influenced RNG
+***** Unlock more planes, modifier types
+
+** Activities
+*** Resources
+**** several steps: //look at skills//
+*** Research
+**** New module tiers
+**** New module types
+**** Resource ops efficiency
+*** Learning
+**** New skills
+**** Improve skills
+*** Crafting
+**** //look at skills//
+*** Combat
+*** Exploration
+**** Gate Network
+**** Wormhole Space
+**** Multiverse
+*** Missions
+*** Jobs
+
+
+@endmindmap
