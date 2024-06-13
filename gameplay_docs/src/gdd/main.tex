@@ -50,11 +50,11 @@ sandbox world.
 
 Aspects in order of priority:
 \begin{enumerate}
-    \item the spacehsip - a home away from home, the office, the job
-    \item production, crafting
-    \item extracting, procuring raw materials; processing
-    \item trading
-    \item exploration, combat
+\item the spacehsip - a home away from home, the office, the job
+\item production, crafting
+\item extracting, procuring raw materials; processing
+\item trading
+\item exploration, combat
 \end{enumerate}
 
 \TODO{Create a section for game concepts, and write a summary for each of the
@@ -212,56 +212,93 @@ susceptible to other types of damage as a trade off.
 
 Damage types:
 \begin{itemize}
-    \item kinetic (brute impact)
-    \item heat
-    \item static (electric charge / disruption, etc)
-    \item radiation
+\item kinetic (brute impact)
+\item heat
+\item static (electric charge / disruption, etc)
+\item radiation
 \end{itemize}
 
 
 \section{TODO}
 \begin{itemize}
-    \item Cover the manufacturing process from raw resource to module/ship,
-    give a few examples.
-    \item What's the default/main POV?
-    \item more details on navigation in space short vs long distances, stars
-    \item more on ship modularity and modules themselves
-    \item weapon modules: types, concerns, etc
-    \item large structure modularity (planetary colonies probably similar idea)
+\item Cover the manufacturing process from raw resource to module/ship, give a
+  few examples.
+\item What's the default/main POV?
+\item more details on navigation in space short vs long distances, stars
+\item more on ship modularity and modules themselves
+\item weapon modules: types, concerns, etc
+\item large structure modularity (planetary colonies probably similar idea)
 \end{itemize}
 
-\part{Technical Implementation - Prototype 1}
+\part{Prototyping - POC01}
 
 \section{Objectives}
+\begin{multicols}{2}
 This first prototype is intended to act as a poc to get a very rough feeling
 for some of the primary game systems.
 
 \begin{itemize}
-    \item Steps needed and time and circumstance needed for various actions in
-        industry.
-    \begin{itemize}
-        \item docking/leaving station
-        \item managing inventory in station cargo holds, renting hold/hangar space
-        \item locating potential mining sites, or buying info
-        \item prospecting potential mining sites, or buying info
-        \item mining with a ship
-        \item transporting ore
-        \item refining ore
-        \item manufacturing simple items
-        \item selling (ore, refined minerals, manufactured items, etc)
-    \end{itemize}
+\item Steps needed and time and circumstance needed for various actions in
+  industry.
+  \begin{itemize}
+  \item docking/leaving station
+  \item managing inventory in station cargo holds, renting hold/hangar space
+  \item locating potential mining sites, or buying info
+  \item prospecting potential mining sites, or buying info
+  \item mining with a ship
+  \item transporting ore
+  \item refining ore
+  \item manufacturing simple items
+  \item selling (ore, refined minerals, manufactured items, etc)
+  \end{itemize}
 \end{itemize}
+\end{multicols}
 
 \section{Requirements}
+\begin{multicols}{2}
 
 \begin{itemize}
-    \item Colour text rendering
-    \item Icon graphics rendering
-    \item Menus - lists of named (or graphical) options
-    \item Timers, ability to display time remaining
-    \item Item tables (inventory lists, system object lists, etc)
-    \item 2d star system map, contains asteroid belt(s) and station(s) to
-        interact with, has zoom function
+\item Colour text rendering
+\item Icon graphics rendering
+\item Menus - lists of named (or graphical) options
+\item Timers, ability to display time remaining
+\item Item tables (inventory lists, system object lists, etc)
+\item 2d star system map, contains asteroid belt(s) and station(s) to interact
+  with, has zoom function
 \end{itemize}
+\end{multicols}
+
+\section{Steps / Notes}
+\begin{multicols}{2}
+
+\subsection{MVPOC01}
+Minimal viable proof of concept, ideas sandbox.
+
+Can probably be initially done in n-curses (plain command line is not ideal to
+represent things like mining cycles).
+
+Can later (soon) move to basic (mainly text-based) GUI in OpenGL that falls
+close to my present OpenGL experiments.
+
+\begin{itemize}
+\item Change location
+\item Basic cargo management (list cargo, transfer to station, etc)
+\item Mining cycles
+\item inventory Space (weight, volume)
+\end{itemize}
+
+\subsection{MVPOC02}
+Building on previous MVPOC.
+
+\begin{itemize}
+\item Minimal industry chain (e.g. p. charges):
+  \begin{itemize}
+  \item Ore $\rightarrow$ minerals.
+  \item Minerals $\rightarrow$ ammo.
+  \end{itemize}
+\item Load the gun.
+\item Go shoot dummies.
+\end{itemize}
+\end{multicols}
 
 \end{document}
