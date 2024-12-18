@@ -42,6 +42,10 @@ skinparam activity {
           DiamondFontColor $color_bg
 }
 
+skinparam component {
+          $primary_scheme()
+}
+
 skinparam arrow {
           $primary_scheme_outl()
           Color $color_arrow

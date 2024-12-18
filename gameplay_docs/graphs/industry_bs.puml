@@ -1,0 +1,69 @@
+@startuml
+
+!include ./uml_skinparams
+
+[ores]     -> [minerals]
+[minerals] -> [alloys]
+[alloys]   -> [adv. alloys]
+
+note top of ores
+        prob. general unrefined
+        solid, liquid, gas.
+end note
+
+[minerals] --> [T1 products A]
+
+[T1 products A] .> [T2 products A]
+[minerals] ..> [T2 products A]
+[alloys]   --> [T2 products A]
+
+[T2 products A]  .> [T3 products A]
+[alloys]      ..> [T3 products A]
+[adv. alloys] --> [T3 products A]
+
+
+[organics]    -> [organics r1]
+[organics r1] -> [organics r2]
+
+note top of "organics r1"
+        e.g. T1 food,
+        T1 industry supplies?
+end note
+
+note top of "organics r2"
+        e.g. T1 meds,
+        T2 ind. supplies?
+end note
+
+[organics] --> [T1 products B]
+
+[organics] ..> [T2 products B]
+[organics r1] --> [T2 products B]
+[T1 products B] .> [T2 products B]
+
+[organics r1] ..> [T3 products B]
+[organics r2] --> [T3 products B]
+[T2 products B] .> [T3 products B]
+
+
+[T1] ..> [T4]
+[T2] ..> [T4]
+[T3] --> [T4]
+
+
+[T2] ..> [T5]
+[T3] ..> [T5]
+[T4] --> [T5]
+
+
+[T3] ..> [T6]
+[T4] ..> [T6]
+[T5] --> [T6]
+
+
+[X]  --> [T7]
+[T4] ..> [T7]
+[T5] ..> [T7]
+[T6] --> [T7]
+
+@enduml
